@@ -6,7 +6,7 @@ import  { useState } from 'react';
 function App() {
   const [records, setRecords] = useState([])
 
-  const url = "http://localhost:4400/api/records/all"
+  const url = "https://record-shop-be.onrender.com/api/records/all"
 
   const getRecords = async () => {
     const allRecords = await axios.get(url);
